@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{913CBF2A-8E0D-4E89-9AC9-E5D861CB8F1B}</ProjectGuid>
+    <RootNamespace>Demo</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>F:\recastnavigation\RecastDemo\Include;F:\recastnavigation\RecastDemo\Contrib\SDL\include;F:\recastnavigation\Recast\Include;F:\recastnavigation\Detour\Include;F:\recastnavigation\DebugUtils\Include;F:\recastnavigation\DetourTileCache\Include;F:\recastnavigation\RecastDemo\Contrib;F:\recastnavigation\DetourCrowd\Include;F:\recastnavigation\RecastDemo\Contrib\fastlz;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>F:\recastnavigation\RecastDemo\Contrib\SDL\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;opengl32.lib;Glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>F:\recastnavigation\RecastDemo\Include;F:\recastnavigation\RecastDemo\Contrib\SDL\include;F:\recastnavigation\Recast\Include;F:\recastnavigation\Detour\Include;F:\recastnavigation\DebugUtils\Include;F:\recastnavigation\DetourTileCache\Include;F:\recastnavigation\RecastDemo\Contrib;F:\recastnavigation\DetourCrowd\Include;F:\recastnavigation\RecastDemo\Contrib\fastlz;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>F:\recastnavigation\RecastDemo\Contrib\SDL\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;opengl32.lib;Glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Include\ChunkyTriMesh.h" />
+    <ClInclude Include="..\..\..\Include\ConvexVolumeTool.h" />
+    <ClInclude Include="..\..\..\Include\CrowdTool.h" />
+    <ClInclude Include="..\..\..\Include\Filelist.h" />
+    <ClInclude Include="..\..\..\Include\imgui.h" />
+    <ClInclude Include="..\..\..\Include\imguiRenderGL.h" />
+    <ClInclude Include="..\..\..\Include\InputGeom.h" />
+    <ClInclude Include="..\..\..\Include\MeshLoaderObj.h" />
+    <ClInclude Include="..\..\..\Include\NavMeshPruneTool.h" />
+    <ClInclude Include="..\..\..\Include\NavMeshTesterTool.h" />
+    <ClInclude Include="..\..\..\Include\OffMeshConnectionTool.h" />
+    <ClInclude Include="..\..\..\Include\PerfTimer.h" />
+    <ClInclude Include="..\..\..\Include\Sample.h" />
+    <ClInclude Include="..\..\..\Include\SampleInterfaces.h" />
+    <ClInclude Include="..\..\..\Include\Sample_Debug.h" />
+    <ClInclude Include="..\..\..\Include\Sample_SoloMesh.h" />
+    <ClInclude Include="..\..\..\Include\Sample_TempObstacles.h" />
+    <ClInclude Include="..\..\..\Include\Sample_TileMesh.h" />
+    <ClInclude Include="..\..\..\Include\TestCase.h" />
+    <ClInclude Include="..\..\..\Include\ValueHistory.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\DebugUtils\Source\DebugDraw.cpp" />
+    <ClCompile Include="..\..\..\..\DebugUtils\Source\DetourDebugDraw.cpp" />
+    <ClCompile Include="..\..\..\..\DebugUtils\Source\RecastDebugDraw.cpp" />
+    <ClCompile Include="..\..\..\..\DebugUtils\Source\RecastDump.cpp" />
+    <ClCompile Include="..\..\..\..\DetourCrowd\Source\DetourCrowd.cpp" />
+    <ClCompile Include="..\..\..\..\DetourCrowd\Source\DetourLocalBoundary.cpp" />
+    <ClCompile Include="..\..\..\..\DetourCrowd\Source\DetourObstacleAvoidance.cpp" />
+    <ClCompile Include="..\..\..\..\DetourCrowd\Source\DetourPathCorridor.cpp" />
+    <ClCompile Include="..\..\..\..\DetourCrowd\Source\DetourPathQueue.cpp" />
+    <ClCompile Include="..\..\..\..\DetourCrowd\Source\DetourProximityGrid.cpp" />
+    <ClCompile Include="..\..\..\..\DetourTileCache\Source\DetourTileCache.cpp" />
+    <ClCompile Include="..\..\..\..\DetourTileCache\Source\DetourTileCacheBuilder.cpp" />
+    <ClCompile Include="..\..\..\..\Detour\Source\DetourAlloc.cpp" />
+    <ClCompile Include="..\..\..\..\Detour\Source\DetourAssert.cpp" />
+    <ClCompile Include="..\..\..\..\Detour\Source\DetourCommon.cpp" />
+    <ClCompile Include="..\..\..\..\Detour\Source\DetourNavMesh.cpp" />
+    <ClCompile Include="..\..\..\..\Detour\Source\DetourNavMeshBuilder.cpp" />
+    <ClCompile Include="..\..\..\..\Detour\Source\DetourNavMeshQuery.cpp" />
+    <ClCompile Include="..\..\..\..\Detour\Source\DetourNode.cpp" />
+    <ClCompile Include="..\..\..\..\Recast\Source\Recast.cpp" />
+    <ClCompile Include="..\..\..\..\Recast\Source\RecastAlloc.cpp" />
+    <ClCompile Include="..\..\..\..\Recast\Source\RecastArea.cpp" />
+    <ClCompile Include="..\..\..\..\Recast\Source\RecastAssert.cpp" />
+    <ClCompile Include="..\..\..\..\Recast\Source\RecastContour.cpp" />
+    <ClCompile Include="..\..\..\..\Recast\Source\RecastFilter.cpp" />
+    <ClCompile Include="..\..\..\..\Recast\Source\RecastLayers.cpp" />
+    <ClCompile Include="..\..\..\..\Recast\Source\RecastMesh.cpp" />
+    <ClCompile Include="..\..\..\..\Recast\Source\RecastMeshDetail.cpp" />
+    <ClCompile Include="..\..\..\..\Recast\Source\RecastRasterization.cpp" />
+    <ClCompile Include="..\..\..\..\Recast\Source\RecastRegion.cpp" />
+    <ClCompile Include="..\..\..\Contrib\fastlz\fastlz.c" />
+    <ClCompile Include="..\..\..\Source\ChunkyTriMesh.cpp" />
+    <ClCompile Include="..\..\..\Source\ConvexVolumeTool.cpp" />
+    <ClCompile Include="..\..\..\Source\CrowdTool.cpp" />
+    <ClCompile Include="..\..\..\Source\Filelist.cpp" />
+    <ClCompile Include="..\..\..\Source\imgui.cpp" />
+    <ClCompile Include="..\..\..\Source\imguiRenderGL.cpp" />
+    <ClCompile Include="..\..\..\Source\InputGeom.cpp" />
+    <ClCompile Include="..\..\..\Source\main.cpp" />
+    <ClCompile Include="..\..\..\Source\MeshLoaderObj.cpp" />
+    <ClCompile Include="..\..\..\Source\NavMeshPruneTool.cpp" />
+    <ClCompile Include="..\..\..\Source\NavMeshTesterTool.cpp" />
+    <ClCompile Include="..\..\..\Source\OffMeshConnectionTool.cpp" />
+    <ClCompile Include="..\..\..\Source\PerfTimer.cpp" />
+    <ClCompile Include="..\..\..\Source\Sample.cpp" />
+    <ClCompile Include="..\..\..\Source\SampleInterfaces.cpp" />
+    <ClCompile Include="..\..\..\Source\Sample_Debug.cpp" />
+    <ClCompile Include="..\..\..\Source\Sample_SoloMesh.cpp" />
+    <ClCompile Include="..\..\..\Source\Sample_TempObstacles.cpp" />
+    <ClCompile Include="..\..\..\Source\Sample_TileMesh.cpp" />
+    <ClCompile Include="..\..\..\Source\TestCase.cpp" />
+    <ClCompile Include="..\..\..\Source\ValueHistory.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

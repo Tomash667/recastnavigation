@@ -8,6 +8,9 @@
 *.pdb
 *.so
 *.idb
+*.iobj
+*.ipdb
+*.user
 
 ## Linux exes have no extension
 RecastDemo/Bin/RecastDemo
@@ -47,3 +50,6 @@ Docs/html
 ## IDE files
 .idea/
 cmake-build-*/
+.vs/
+/RecastDemo/vc/Demo/Demo/Debug
+/RecastDemo/vc/Demo/Demo/Release
